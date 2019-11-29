@@ -1,9 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
 class Ex5{
 
 	public double ex5_1(int [] a){
+
 		
-		double ret = 0;
-		
-		return ret;
+		int ret = 0;
+        int[] data = a;
+        for(int i=0; i < data.length; i++){
+            ret += data[i];
+        }
+        double ave = (double)ret / (double)data.length;
+		return ave;
 	}
 }
